@@ -12,7 +12,7 @@ import (
 
 var (
 	// SingingMethodES256KR represents the ES256K-R JWT signing method, where the ECDSA signature is generated using the deterministic scheme as described by RFC 6979.
-	// The 'R' donates an extra byte at the end of the signature, which allows the public key to be recoverable from the
+	// This signing method uses an extra byte at the end of the signature, which allows the public key to be recoverable from the
 	// signature, making a total length of 65 byte signatures: 32 byte R, 32 byte S and 1 byte V in R || S || V format.
 	SingingMethodES256KR jwt.SigningMethod
 

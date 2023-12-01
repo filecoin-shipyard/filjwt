@@ -5,7 +5,7 @@
 FilJWT is a Go package designed for the integration of Filecoin wallet addresses with JSON Web Tokens (JWT), specifically using the ES256K-R signing method. This package uniquely caters to Filecoin wallet addresses that follow the secp256k1 protocol.
 
 ## Features
-- **ES256K-R Signing Method**: Implements the ES256K-R JWT signing method, where the ECDSA signature is deterministically generated as per RFC 6979. The 'R' denotes an additional byte at the signature's end, enabling the recovery of the public key directly from the JWT signature. The signature comprises 65 bytes: 32 bytes for R, 32 bytes for S, and 1 byte for V, arranged in R || S || V format.
+- **ES256K-R Signing Method**: Implements the ES256K-R JWT signing method, where the ECDSA signature is deterministically generated as per RFC 6979. This signing method uses an additional byte at the signature's end, enabling the recovery of the public key directly from the JWT signature. The signature comprises 65 bytes: 32 bytes for R, 32 bytes for S, and 1 byte for V, arranged in R || S || V format.
 - **Filecoin Wallet Address Compatibility**: Specifically designed to work with Filecoin wallet addresses that use the secp256k1 protocol. The package extracts these addresses from the 'kid' header of a JWT token for signature verification.
 - **Secp256k1 Key Utility**: Includes a utility to convert a Lotus wallet export string into a Filecoin address and a secp256k1 private key, facilitating easy integration with Filecoin's wallet management.
 
