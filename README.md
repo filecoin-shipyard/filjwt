@@ -76,7 +76,7 @@ func main() {
 	fmt.Printf("Generated JWT token:\n  %s\n", signedToken)
 
 	// Verify the generated token
-	parsedToken, err := jwt.Parse(signedToken, func(_ *jwt.Token) (interface{}, error) {
+	parsedToken, err := jwt.Parse(signedToken, func(_ *jwt.Token) (any, error) {
 		return addr, nil
 	}, jwt.WithValidMethods([]string{filjwt.SingingMethodES256KR.Alg()}))
 	if err != nil {
