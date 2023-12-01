@@ -3,7 +3,7 @@
 [![Go Reference](https://pkg.go.dev/badge/github.com/filecoin-shipyard/filjwt.svg)](https://pkg.go.dev/github.com/filecoin-shipyard/filjwt)
 [![Go Test](https://github.com/filecoin-shipyard/filjwt/actions/workflows/go-test.yml/badge.svg)](https://github.com/filecoin-shipyard/filjwt/actions/workflows/go-test.yml)
 
-> **Securely Generate JWT from Filecoin Wallet Address**
+> **Securely Generate JWT from Filecoin Wallet**
 
 FilJWT is a Go package designed for the integration of Filecoin wallet addresses with JSON Web Tokens (JWT), specifically using the ES256K-R signing method. This package uniquely caters to Filecoin wallet addresses that follow the secp256k1 protocol.
 
