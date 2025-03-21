@@ -5,7 +5,7 @@ go 1.20
 require (
 	github.com/decred/dcrd/dcrec/secp256k1/v4 v4.2.0
 	github.com/filecoin-project/go-address v1.1.0
-	github.com/golang-jwt/jwt/v5 v5.1.0
+	github.com/golang-jwt/jwt/v5 v5.2.2
 )
 
 require (
